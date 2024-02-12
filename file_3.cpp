@@ -6,22 +6,6 @@ using namespace std;
 
 typedef int64_t ll;
 
-ostream& operator << (ostream& out,vector<ll> &a){
-
-    out<<"[ ";
-    for(ll i=0;i<a.size();i++){
-        
-        out<<a[i];
-
-        if(i+1!=a.size()){
-
-            out<<", ";
-        }
-    }
-    out<<" ]";
-    return out;
-}
-
 int main(){
 
     ll T;
@@ -40,6 +24,16 @@ int main(){
 
         sort(a.begin(),a.end(),greater<>());
 
-        cout<<a<<"\n";
+        cout<<"[ ";
+        for(ll i=0;i<a.size();i++){
+            
+            cout<<a[i];
+
+            if(i+1!=a.size()){
+
+                cout<<", ";
+            }
+        }
+        cout<<" ]";
     }
 }
